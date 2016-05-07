@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+#box-main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#nav-main-wrap {
+	background-color: black;
+	/*position: fixed;*/
+	flex: 0 1 auto;
+	/*top: 0;*/
+	/*left: 0;*/
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-list {
+	padding: 0;
+	width: 60%;
+	margin-right: 10px;
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.pj-logo {
+	display: inline-block;
+	width: 270px;
+}
+
+.nav-item {
+	display: inline-block;
+	color: white;
+	/*margin: 0px 60px 0px 60px;*/
+}
+
+#home-wrap {
+	height: 100%;
+	width: 100%;
+	flex: 1 1 auto;
+	/*flex-grow: 1;*/
+	background-image: url('TOAST.jpg');
+	background-size: cover;
+	background-color: red;
+}
