@@ -14,6 +14,13 @@
  *= require_self
  */
 
+@font-face {
+  font-family: 'HeroLight';
+  src: url('hero-light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -39,10 +46,7 @@ html, body {
 
 #nav-main-wrap {
 	background-color: black;
-	/*position: fixed;*/
 	flex: 0 1 auto;
-	/*top: 0;*/
-	/*left: 0;*/
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -52,7 +56,7 @@ html, body {
 .nav-list {
 	padding: 0;
 	width: 60%;
-	margin-right: 10px;
+	margin-right: 60px;
 	display: flex;
 	align-content: space-between;
 	justify-content: space-between;
@@ -65,16 +69,14 @@ html, body {
 
 .nav-item {
 	display: inline-block;
+	font-family: 'HeroLight';
 	color: white;
-	/*margin: 0px 60px 0px 60px;*/
 }
 
 #home-wrap {
 	height: 100%;
 	width: 100%;
 	flex: 1 1 auto;
-	/*flex-grow: 1;*/
 	background-image: url('TOAST.jpg');
 	background-size: cover;
-	background-color: red;
 }
