@@ -10,9 +10,16 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "bootstrap";
+
+@font-face {
+  font-family: 'HeroLight';
+  src: url('hero-light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -29,6 +36,7 @@ html {
 html, body {
 	height: 100%;
 	margin: 0;
+	background-color: black;
 }
 
 #box-main {
@@ -39,10 +47,6 @@ html, body {
 
 #nav-main-wrap {
 	background-color: black;
-	/*position: fixed;*/
-	flex: 0 1 auto;
-	/*top: 0;*/
-	/*left: 0;*/
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -52,29 +56,66 @@ html, body {
 .nav-list {
 	padding: 0;
 	width: 60%;
-	margin-right: 10px;
+	margin: 0;
+	margin-right: 60px;
 	display: flex;
-	align-content: space-between;
+	align-content: center;
 	justify-content: space-between;
 }
 
 .pj-logo {
-	display: inline-block;
-	width: 270px;
+	width: 250px;
 }
 
 .nav-item {
 	display: inline-block;
+	font-family: 'HeroLight';
 	color: white;
-	/*margin: 0px 60px 0px 60px;*/
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: white;
+	opacity: 0.9;
+}
+
+.nav-item a:hover {
+	opacity: 1;
+}
+
+.dropdown-menu {
+	width: 450px;
+	margin: 0px 0px 0px -180px;
+	background-color: black;
+	border: solid white 1px;
+}
+
+.dropdown-menu li {
+	display: inline-block;
+	margin: 0;
+	margin-left: 15px;
+	padding: 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .sub-menu {
+		margin: 0;
+		width: 200px;
+    visibility: hidden;
+    margin-top: -3px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
 }
 
 #home-wrap {
 	height: 100%;
 	width: 100%;
 	flex: 1 1 auto;
-	/*flex-grow: 1;*/
-	background-image: url('TOAST.jpg');
+	background-image: url('pj-ranch.jpg');
 	background-size: cover;
-	background-color: red;
 }
