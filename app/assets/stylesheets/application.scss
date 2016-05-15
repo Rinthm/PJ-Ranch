@@ -48,7 +48,8 @@ html, body {
 #nav-main-wrap {
 	background-color: black;
 	width: 100%;
-	height: 10%;
+	height: 60px;
+	border-bottom: 1px solid white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -114,13 +115,42 @@ html, body {
 }
 
 #home-wrap {
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	flex: 1 1 auto;
-	
+	margin: 0;
 }
 
 .slide-img {
 	height: 100%;
 	width: 100%;
+}
+
+.page-wrap {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.page-title {
+
+}
+
+.body-wrap {
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-img {
+	margin-top: 300px;
+	margin-bottom: 30px;
+	align-self: center;
+	width: 300px;
+	heigth: 300px;
 }
