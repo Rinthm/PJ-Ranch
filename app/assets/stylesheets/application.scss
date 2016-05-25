@@ -36,7 +36,7 @@ html {
 html, body {
 	height: 100%;
 	margin: 0;
-	background-color: black;
+	background-color: white;
 }
 
 #box-main {
@@ -78,11 +78,10 @@ html, body {
 .nav-item a {
 	text-decoration: none;
 	color: white;
-	opacity: 0.9;
 }
 
 .nav-item a:hover {
-	opacity: 1;
+	color: #FF0020
 }
 
 .dropdown-menu {
@@ -136,10 +135,6 @@ html, body {
 	color: white;
 }
 
-.page-title {
-
-}
-
 .body-wrap {
 	padding: 60px;
 	display: flex;
@@ -153,4 +148,8 @@ html, body {
 	align-self: center;
 	width: 300px;
 	heigth: 300px;
+}
+
+p {
+	color: #6A6565;
 }
