@@ -1,0 +1,15 @@
+<div id="blogpage-wrap">
+	<% @posts.each do |post| %>
+		<div class="post-wrap">
+			<div class="post-image">
+				
+			</div>
+			<h1 class="post-title">
+				<%= post.title %>
+			</h1>
+			<p class="post-teaser">
+				<%= sanitize(truncate(post.body, length: 150)) %>
+			</p>
+		</div>
+	<% end %>
+</div>
