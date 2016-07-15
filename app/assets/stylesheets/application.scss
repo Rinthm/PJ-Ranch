@@ -56,6 +56,7 @@ html, body {
 	position: fixed;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 99;
 }
 
 .nav-list {
@@ -163,8 +164,8 @@ p {
 // BLOG INDEX
 
 #blog-index-wrap {
-	// display: flex;
-	// flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: url('pj-ranch.jpg') no-repeat center center fixed;
